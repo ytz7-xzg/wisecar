@@ -1,0 +1,22 @@
+# CMake build artifacts
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.o
+*.a
+*.so
+*.out
+
+# Compiled project binaries
+/src/main
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Editor and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
