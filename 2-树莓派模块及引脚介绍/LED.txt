@@ -1,0 +1,23 @@
+import RPi.GPIO as GPIO
+import time
+
+# 使用BCM编号方式
+GPIO.setmode(GPIO.BCM)   
+led=4
+GPIO.setup(led, GPIO.OUT)
+print('Start blinking...')
+
+#led灯闪烁
+for i in range(10):
+  GPIO.setmode(GPIO.BCM)
+  GPIO.setup(led, GPIO.OUT)
+  GPIO.output(led,GPIO.HIGH)
+  # 持续一秒
+  time.sleep(1.0)
+  #4号引脚输出低电平
+  GPIO.output(led,GPIO.LOW)
+  time.sleep(1.0)
+  #释放使用的GPIO引脚
+  GPIO.cleanup()
+print('Finish blinking...')
+

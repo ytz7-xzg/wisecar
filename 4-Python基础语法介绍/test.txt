@@ -1,0 +1,54 @@
+import time
+import numpy as np
+#输出
+print("strat")
+
+print(1)
+
+x="123"
+print(x)
+a=123
+print(a)
+
+#列表定义
+listA = [1,2]
+print(listA[0])
+
+
+print("切片")
+listY=listA[0:2:1]
+print(listY)
+
+#添加元素
+
+listA.append(4)
+print(listA)
+
+listA.append([5,6])
+print(listA)
+
+
+listD = [1,2,3]
+listB = [9,8,7]
+#生成列表
+listC = np.array((listB,listD))
+print(listC)
+print(listC[0])
+print(listC[0][0])
+
+
+
+#循环
+for i in range(10,4,-1):
+  print(i)
+  time.sleep(1)
+
+
+
+#函数
+def Print(x):
+  print(x)
+  
+Print(3)
+
+
